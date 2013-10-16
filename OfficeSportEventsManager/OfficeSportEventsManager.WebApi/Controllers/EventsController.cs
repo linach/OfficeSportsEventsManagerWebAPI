@@ -145,7 +145,8 @@ namespace OfficeSportEventsManager.WebApi.Controllers
                 SportEvent ev = new SportEvent
                 {
                     Date = newEvent.Date,
-                    Type = newEvent.Type
+                    Type = newEvent.Type,
+                    PictureLink=newEvent.PictureLink
                 };
                 ev.ParticipatingPlayers.Add(user);
                 context.SportEvents.Add(ev);
